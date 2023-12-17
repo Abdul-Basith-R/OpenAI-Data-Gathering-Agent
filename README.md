@@ -25,7 +25,7 @@ Run the application:
 
 streamlit run Data_Gathering_Agent.py
 
-Obtain an OpenAI API key. Paste in the sidebar of the application in API key field.
+Obtain an OpenAI API key from (https://platform.openai.com/api-keys). Paste in the sidebar of the application in API key field.
 
 Usage
 Initiates a conversation using data_gatherer and retrieves user and AI assistant messages.
