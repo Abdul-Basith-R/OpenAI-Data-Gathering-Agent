@@ -1,44 +1,51 @@
-Project Overview:
+# Data Gathering Agent 
+
+## Project Overview:
 
 The Data Gathering Agent is a Python-based chatbot designed to interact with users, collect  information, and store it efficiently. This project utilizes Streamlit and OpenAI to gather  information  through an interactive conversation with an AI assistant. The extracted information is then analyzed and formatted into a JSON string and saved as a CSV file.This project is ideal for researchers, marketers, and organizations seeking a friendly and effective way to gather data from participants.
 
-Key Features:
+## Key Features:
 
-AI-powered data gathering: Streamlit interface facilitates a natural conversation with an AI assistant that collects user information.
-OpenAI analysis: Extracted information is analyzed using OpenAI API for accurate extraction and processing.
-Automatic extraction: Extracted data is converted to a JSON format for easy retrieval and saved as CSV file.
+- AI-powered data gathering: Streamlit interface facilitates a natural conversation with an AI assistant that collects user information.
+- OpenAI analysis: Extracted information is analyzed using OpenAI API for accurate extraction and processing.
+- Automatic extraction: Extracted data is converted to a JSON format for easy retrieval and saved as CSV file.
 
-Requirements:
+## Requirements:
 
-Python
-Streamlit
-OpenAI API key
+- Python
+-  Streamlit
+- OpenAI API key
 
-Getting Started:
+## Getting Started:
 
 Clone the repository.
+```sh
+git clone https://github.com/Abdul-Basith-R/OpenAI-Data-Gathering-Agent.git
+```
 Install the required Python packages:
 
+```sh
 pip install -r requirements.txt
-
+```
 Run the application:
-
+```sh
 streamlit run Data_Gathering_Agent.py
+```
+Obtain an OpenAI API key from [OpenAI API](https://platform.openai.com/api-keys). Paste in the sidebar of the application in API key field.
 
-Obtain an OpenAI API key from (https://platform.openai.com/api-keys). Paste in the sidebar of the application in API key field.
+## Usage
 
-Usage
-Initiates a conversation using data_gatherer and retrieves user and AI assistant messages.
-Appends messages to the chats list in session state.
-Checks for user exit requests.
-Calls value_extractor asynchronously to analyze chats and extract personal information.
-Writes extracted information to "output.csv".
-Exits upon completion or user request.
+- Initiates a conversation using data_gatherer and retrieves user and AI assistant messages.
+- Appends messages to the chats list in session state.
+- Checks for user exit requests.
+- Calls value_extractor asynchronously to analyze chats and extract personal information.
+- Writes extracted information to "output.csv".
+- Exits upon completion or user request.
 
-Further Development:
+## Further Development:
 
 This project can be extended in various ways, such as:
 
-Giving roles to the agent of the users desires.
-Integrating with additional APIs or databases for data storage and analysis.
-Building advanced conversational logic for the AI assistant.
+- Giving roles to the agent of the users desires.
+- Integrating with additional APIs or databases for data storage and analysis.
+- Building advanced conversational logic for the AI assistant.
